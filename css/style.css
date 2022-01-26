@@ -16,8 +16,8 @@ body{
   flex-direction: column;
   background-color: hsl(0, 0%, 100%);
   justify-content: start;
-  width: 240px;
-  height: 380px;
+  max-width: 240px;
+  max-height: 380px;
   border-radius: 15px;
   padding: 15px 15px 40px;
   margin: auto;
@@ -28,10 +28,9 @@ body{
 }
 .card-title{
   color:hsl(218, 44%, 22%);
-  padding: 0px;
   margin-bottom: 2px;
   font-weight: 700;
-  padding: 0 10px;
+  padding: 0px 10px;
   text-align: center;
 }
 .card-paragraph{
@@ -40,4 +39,19 @@ body{
   font-size: 15px;
   font-weight: 400;
   padding: 0 10px;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .card-container {
+      width: 220px;
+      height: 360px;
+    }
+    .card-title{
+        padding: 0;
+    }
+    .card-paragraph{
+        padding: 0;
+    }
 }
