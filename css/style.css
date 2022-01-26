@@ -11,7 +11,7 @@ body{
 .font-police{
   font-family: 'Outfit', sans-serif;
 }
-article{
+.card{
   display: flex;
   flex-direction: column;
   background-color: hsl(0, 0%, 100%);
@@ -44,7 +44,7 @@ article{
 
 
 @media only screen and (max-width: 375px) {
-    article {
+    .card {
       width: 220px;
       height: 360px;
     }
